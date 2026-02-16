@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddImageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/imageFragment"
+                android:name="com.example.gallery.ImageFragment"
+                android:layout_width="match_parent"
+                android:layout_height="336dp"
+                tools:layout="@layout/fragment_image"/>
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.example.gallery.DescFragment"
+                tools:layout="@layout/fragment_desc"
+                android:id="@+id/descFragment" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

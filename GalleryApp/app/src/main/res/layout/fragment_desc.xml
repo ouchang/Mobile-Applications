@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DescFragment">
+
+    <Button
+        android:text="Take Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_lemon_green"
+        android:backgroundTint="@color/light_lemon_green"
+        android:id="@+id/takeImageButton" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minHeight="300dp"
+        android:id="@+id/descEditText"
+        android:text="Write here your description..."
+        android:textAlignment="center"/>
+
+    <Button
+        android:text="Apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_lemon_green"
+        android:backgroundTint="@color/light_lemon_green"
+        android:enabled="false"
+        android:id="@+id/applyButton"/>
+
+</LinearLayout>
